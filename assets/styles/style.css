@@ -17,6 +17,7 @@ header{
 
 /* navbar */
 navbar {
+    background-color: rgba(0,0,0,0.3);
     display:flex;
     color: white;
     justify-content:end;
@@ -89,7 +90,7 @@ main {
 
 /* Section Quick Access */
 section.quickAccess{
-    background-color:rgb(45, 45, 45);
+    background-color:#2d2d2d;
     height: 350px;
 }
 
@@ -116,9 +117,9 @@ section.quickAccess .quickAccess-container > p {
 
 .quickCard {
     box-sizing: border-box;
-    width: 15%;
+    width: 17%;
     height:280px;
-    min-width: 15%;
+    min-width: 200px;
 
     background-color: rgb(252, 252, 252);
     border-radius: 15px;
@@ -146,29 +147,178 @@ section.quickAccess .quickAccess-container > p {
 }
 
 /*Section Happeing */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section.happening {
+    box-sizing: border-box;
     background-color: #EEAB00;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+section.happening .happening-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 600px;
+
+    background-color: #2d2d2d;
+    color: white;
 }
 
+section.happening .happening-container > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.happening-items .happening-item:nth-child(1){
+    background-color: black;
+    width: 500px;
+    height: 450px;
+    margin: 40px 10px;
+    background-image: url(../images/section-happening/post1.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #1A1B23;
+}
+
+.happening-item:nth-child(1) p:first-child{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 0px 10px 5px;
+}
+
+.happening-item:nth-child(1) p:last-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 0px 0px 10px 5px
+}
+
+
+.happening-items .happening-item:nth-child(2){
+    width: 500px;
+    height: 450px;
+    margin: 40px 30px;
+}
+
+.happening-items .happening-item:nth-child(3){
+    background-color: black;
+    width: 320px;
+    height: 450px;
+    margin: 40px 30px;
+
+    background-image: url(../images/section-happening/post5.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #1A1B23;
+}
+
+.happening-item:nth-child(3) p:first-child{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 0px 10px 5px;
+}
+
+.happening-item:nth-child(3) p:last-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 0px 0px 10px 5px
+}
+
+.happening-items .happening-item ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.happening-items .happening-item ul li:nth-child(1){
+    width: 220px;
+    height: 200px;
+    margin-right: 50px;
+
+    background-image: url(../images/section-happening/post2.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #1A1B23;
+}
+
+
+.happening-items .happening-item ul li:nth-child(2){
+    width: 220px;
+    height: 200px;
+
+    background-image: url(../images/section-happening/post3.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #1A1B23;
+}
+.happening-items .happening-item ul li:nth-child(3){
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+
+    background-image: url(../images/section-happening/post4.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #1A1B23;
+}
+
+.happening-item p:first-child{
+    font-size: rem;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 0px 10px 5px;
+}
+
+.happening-item p:last-child{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 0px 0px 10px 5px
+}
+
+
+
+/*Section Green Hall */
 section.greenHall {
     background-color: #D9D9D9;
     height: 600px;

@@ -9,11 +9,12 @@ html {
 /* ---------- header ---------- */
 header{
     background-image: 
-                        linear-gradient(rgba(0, 0, 0, 0.85), 
-                        rgba(45, 45, 45, 0.4), rgba(45, 45, 45,0.99) 100%), 
+                        linear-gradient(rgba(5, 5, 5, 0.85), 
+                        rgba(5, 5, 5, 0.4), rgba(5, 5, 5,0.99) 100%), 
                         url(../images/banner-header-estudante.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -94,7 +95,7 @@ main {
 
 /* Section Quick Access */
 section.quickAccess{
-    background-color:var(--background-color);
+    background-color: rgb(5, 5,5);
     height: 350px;
 }
 
@@ -150,21 +151,25 @@ section.quickAccess .quickAccess-container > p {
     width: 40%;
 }
 
-/*----------- Section Happeing ----------- */
+
+
+/*----------- Section Happeing At the School ----------- */
 section.happening {
     box-sizing: border-box;
     color: white;
-    font-weight: 300;
-    font-size: .8rem;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 20px;
 }
+
 section.happening .happening-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 600px;
 
-    background-color: var(--background-color);
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 section.happening .happening-container > ul {
@@ -176,8 +181,9 @@ section.happening .happening-container > ul {
     background-color: black;
     width: 500px;
     height: 450px;
-    margin: 40px 10px;
-    background-image: url(../images/section-happening/post1.jpg);
+    margin: 40px 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), 
+    rgba(45, 45, 45, 0.4), rgba(45, 45, 45,0.99) 100%), url(../images/section-happening/post1.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,7 +199,6 @@ section.happening .happening-container > ul {
     font-size: 1rem;
     font-weight: 400;
     color: white;
-    background-color: rgba(0,0,0,0.6);
     padding: 10px 0px 10px 5px;
 }
 
@@ -201,7 +206,6 @@ section.happening .happening-container > ul {
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    background-color: rgba(0,0,0,0.6);
     padding: 0px 0px 10px 5px
 }
 
@@ -209,16 +213,17 @@ section.happening .happening-container > ul {
 .happening-items .happening-item:nth-child(2){
     width: 500px;
     height: 450px;
-    margin: 40px 30px;
+    margin: 40px 10px;
 }
 
 .happening-items .happening-item:nth-child(3){
     background-color: black;
     width: 320px;
     height: 450px;
-    margin: 40px 30px;
+    margin: 40px 0px;
 
-    background-image: url(../images/section-happening/post5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), 
+    rgba(45, 45, 45, 0.4), rgba(45, 45, 45,0.99) 100%), url(../images/section-happening/post5.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,7 +239,6 @@ section.happening .happening-container > ul {
     font-size: 1rem;
     font-weight: 400;
     color: white;
-    background-color: rgba(0,0,0,0.6);
     padding: 10px 0px 10px 5px;
 }
 
@@ -242,9 +246,9 @@ section.happening .happening-container > ul {
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    background-color: rgba(0,0,0,0.6);
     padding: 0px 0px 10px 5px
 }
+
 
 .happening-items .happening-item ul{
     display: flex;
@@ -253,11 +257,12 @@ section.happening .happening-container > ul {
 }
 
 .happening-items .happening-item ul li:nth-child(1){
-    width: 220px;
-    height: 200px;
-    margin-right: 50px;
+    width: 235px;
+    height: 215px;
+    margin-right: 15px;
 
-    background-image: url(../images/section-happening/post2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), 
+    rgba(45, 45, 45, 0.4), rgba(45, 45, 45,0.99) 100%), url(../images/section-happening/post2.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -269,12 +274,12 @@ section.happening .happening-container > ul {
     color: #1A1B23;
 }
 
-
 .happening-items .happening-item ul li:nth-child(2){
-    width: 220px;
-    height: 200px;
+    width: 235px;
+    height: 215px;
 
-    background-image: url(../images/section-happening/post3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), 
+    rgba(45, 45, 45, 0.4), rgba(45, 45, 45,0.99) 100%), url(../images/section-happening/post3.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -287,10 +292,11 @@ section.happening .happening-container > ul {
 }
 .happening-items .happening-item ul li:nth-child(3){
     width: 500px;
-    height: 200px;
-    margin-top: 50px;
+    height: 220px;
+    margin-top: 10px;
 
-    background-image: url(../images/section-happening/post4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), 
+    rgba(45, 45, 45, 0.4), rgba(45, 45, 45,0.99) 100%), url(../images/section-happening/post4.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,10 +309,9 @@ section.happening .happening-container > ul {
 }
 
 .happening-item p:first-child{
-    font-size: rem;
+    font-size: 1rem;
     font-weight: 400;
     color: white;
-    background-color: rgba(0,0,0,0.6);
     padding: 10px 0px 10px 5px;
 }
 
@@ -314,17 +319,13 @@ section.happening .happening-container > ul {
     font-size: 1.1rem;
     font-weight: bold;
     color: white;
-    background-color: rgba(0,0,0,0.6);
     padding: 0px 0px 10px 5px
 }
 
 
-
-
-
 /*Section Green Hall */
 section.greenHall {
-    background-color: var(--background-color);
+    background-color: #020625;
     height: 600px;
     display: flex;
     flex-direction: row;
@@ -373,83 +374,55 @@ section.greenHall {
 }
 
 .greenHall-items .greenHall-item > img{
-    border: 2px solid white;
+    border: 1px solid grey;
     max-width: 50vw;
     max-height: 85vh;
 }
 
 
+/*Section Receive Transmissions */
+section.receiveTransmissions {
+    background-color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-.greenHall-items .greenHall-item:first-child {
-    margin-right: 40px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
+.receive-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 650px;
-    padding: 0px 100px;
-}
-
-.greenHall-items .greenHall-item:first-child  p:nth-child(2){
-    margin-right: 50px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: white;
-    line-height: 1.5rem;
-}
-
-.greenHall-items .greenHall-item > img{
-
-    border: 2px solid white;
+    box-sizing: border-box;
+    margin: auto;   
     
-
 }
 
-*/
+.receive-container p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.receive-container input {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 600px;
+    height: 60px;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.receive-container input::placeholder {
+    font-size: 1.2rem;
+    color: black;
+    opacity: 60%;
+}
 
 
 section.communityBulletin {
@@ -457,12 +430,35 @@ section.communityBulletin {
     height: 600px;
 }
 
-section.receiveTransmissions {
-    background-color: #FFB660;
-    height: 300px;
-}
 
 footer {
-    background-color: #7F83E0;
+    background-color: #020625;
+    color: white;
     height: 600px;
+}
+
+.footer-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.footer-container ul > li{
+    margin: 0px 250px 50px 0px;
+}
+
+.footer-container form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.footer-container form .form-item {
+    margin: 0px 0px 40px 100px;
+}
+
+.footer-container form input.form-item {
+    height: 40px;
 }

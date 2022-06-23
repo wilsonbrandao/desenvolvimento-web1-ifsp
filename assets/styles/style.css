@@ -42,6 +42,12 @@ navbar .navbar-items{
 
 }
 
+navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 navbar .navbar-item{
     padding: 20px 20px;
 }
@@ -95,8 +101,9 @@ main {
 
 /* Section Quick Access */
 section.quickAccess{
-    background-color: rgb(5, 5,5);
+    background-color: #020625;
     height: 350px;
+    padding: 15px 0px 0px 0px;
 }
 
 section.quickAccess .quickAccess-container{
@@ -323,7 +330,7 @@ section.happening .happening-container > ul {
 }
 
 
-/*Section Green Hall */
+/*------------------Section Green Hall -------------------*/
 section.greenHall {
     background-color: #020625;
     height: 600px;
@@ -380,6 +387,119 @@ section.greenHall {
 }
 
 
+/*Community-schoolNews-container  */
+.community-schoolNews-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-color: #020625;
+}
+
+.community-schoolNews-container h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.bulletin-post {
+    background-color: white;
+    padding: 20px;
+    margin: 30px 50px 0px 0px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.60);
+    width: 700px;
+}
+
+.bulletin-post-contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.bulletin-post-contents li:first-child {
+    background-color: orange;
+    border-radius: 15px 0px 0px 15px;
+    height: 100%;
+    width: 20px;
+}
+.bulletin-post-contents li:nth-child(2) {
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.bulletin-post-contents li:nth-child(3) p:first-child,
+.bulletin-post-contents li:nth-child(2) p:first-child  {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bulletin-post-contents li:nth-child(3) p:last-child{
+    text-align: justify;
+    line-height: 120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.schoolNews {
+    margin-left: 10px;
+    width: 650px;
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Section Receive Transmissions */
 section.receiveTransmissions {
     background-color: white;
@@ -404,17 +524,31 @@ section.receiveTransmissions {
     color: black;
 }
 
-.receive-container input {
+.receive-container .receive-sendbox {
+    display: flex;
+    align-items: center;
     background-color: transparent;
     border-radius: 10px;
     border: 2px solid black;
+    margin-top: 20px;
+}
+
+.receive-container input {
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
     width: 600px;
     height: 60px;
-    margin-top: 20px;
+  
     padding-left: 30px;
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
     color: black;
+}
+
+.receive-container input:focus-visible{
+    border: transparent;
+    background-color: transparent;
 }
 
 
@@ -424,17 +558,20 @@ section.receiveTransmissions {
     opacity: 60%;
 }
 
-
-section.communityBulletin {
-    background-color: #7000FF;
-    height: 600px;
+.receive-container img {
+    width: 50px;
 }
-
 
 footer {
     background-color: #020625;
     color: white;
     height: 600px;
+}
+
+footer a, footer label {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 .footer-container {
@@ -456,9 +593,22 @@ footer {
 }
 
 .footer-container form .form-item {
-    margin: 0px 0px 40px 100px;
+    margin: 0px 0px 10px 100px;
 }
+
 
 .footer-container form input.form-item {
     height: 40px;
+}
+
+.footer-container form button{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color:  black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 200px;
+    height: 40px;
+    margin: 0px 0px 40px 100px;
 }

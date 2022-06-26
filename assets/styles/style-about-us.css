@@ -1,0 +1,146 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+navbar {
+    background-color: rgba(2,6,37);
+    display:flex;
+    color: white;
+    justify-content:end;
+    width: 100%;
+    min-height: 90px;
+}
+
+navbar .navbar-items{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+navbar a:hover {
+    color: #26a9e0;
+}
+
+navbar .navbar-item{
+    padding: 20px 20px;
+}
+
+navbar .navbar-item .btn-navbar{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color:  #FFFFFF;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+body {
+    font-family: 'inter', Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    text-align: justify;
+}
+
+h1 {
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    padding: 10px 20% 0px 20%;
+    background: #ebebeb;    
+}
+
+.main-block h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin: 25px 0px;
+}
+
+.main-block p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-block p:last-child {
+    margin-bottom: 25px;
+}
+
+
+
+footer {
+    background-color: rgb(2, 6, 37);
+    color: white;
+    height: 600px;
+}
+
+footer a, footer label {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.footer-container ul > li{
+    margin: 0px 250px 50px 0px;
+}
+
+.footer-container form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.footer-container form .form-item {
+    margin: 0px 0px 10px 100px;
+}
+
+
+.footer-container form input.form-item {
+    height: 40px;
+}
+
+.footer-container form button{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color:  black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 200px;
+    height: 40px;
+    margin: 0px 0px 40px 100px;
+}

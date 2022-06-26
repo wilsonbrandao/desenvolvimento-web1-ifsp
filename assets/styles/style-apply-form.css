@@ -1,0 +1,269 @@
+
+navbar {
+    background-color: rgba(2,6,37);
+    display:flex;
+    color: white;
+    justify-content:end;
+    width: 100%;
+    min-height: 90px;
+}
+
+navbar .navbar-items{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+navbar a:hover {
+    color: #26a9e0;
+}
+
+navbar .navbar-item{
+    padding: 20px 20px;
+}
+
+navbar .navbar-item .btn-navbar{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color:  #FFFFFF;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+body,
+div,
+h1,
+form,
+input,
+p {
+    font-family: 'inter', Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+h1 {
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    font-size: 12px;
+}
+
+hr {
+    color: #a9a9a9;
+    opacity: 0.3;
+}
+
+.main-block {
+    min-width: 600px;
+    padding: 10px 30% 0px 30%;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    background: #ebebeb;
+    
+}
+
+form {
+    margin: 0 30px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 15px 0;
+}
+
+.legend_questions {
+    margin: 25px 0px 5px;
+    font-weight: bold;
+}
+input[type=radio] {
+    display: none;
+}
+
+label#icon {
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+label.radio {
+    position: relative;
+    display: inline-block;
+    padding-top: 4px;
+    margin-right: 20px;
+    text-indent: 30px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+label.radio:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1c87c9;
+}
+
+label.radio:after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    top: 8px;
+    left: 4px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+input[type=radio]:checked+label:after {
+    opacity: 1;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+    width: calc(100% - 57px);
+    height: 36px;
+    margin: 13px 0 5px -5px;
+    padding-left: 10px;
+    border-radius: 0 5px 5px 0;
+    border: solid 1px #cbc9c9;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    background: #fff;
+}
+
+input[type=password] {
+    margin-bottom: 15px;
+}
+
+.form_birthdate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.legend_birthdate {
+    padding: 15px 0px 5px 0px;
+}
+
+select[name=form_birthmonth],
+select[name=form_birthday],
+select[name=form_birthyear]{
+    margin: 0px 5px 0px 0px;
+}
+
+#icon {
+    display: inline-block;
+    padding: 9.3px 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    background: rgba(2,6,37);
+    color: #fff;
+    text-align: center;
+}
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background: rgba(2,6,37);
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+button:hover {
+    background: #26a9e0;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(2, 6, 37);
+    color: white;
+    height: 600px;
+}
+
+footer a, footer label {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.footer-container ul > li{
+    margin: 0px 250px 50px 0px;
+}
+
+.footer-container form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.footer-container form .form-item {
+    margin: 0px 0px 10px 100px;
+}
+
+
+.footer-container form input.form-item {
+    height: 40px;
+}
+
+.footer-container form button{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color:  black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 200px;
+    height: 40px;
+    margin: 0px 0px 40px 100px;
+}

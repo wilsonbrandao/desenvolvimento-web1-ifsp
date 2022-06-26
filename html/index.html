@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/reset.css">
-    <link rel="stylesheet" href="../assets/styles/style.css"> 
+    <link rel="stylesheet" href="../assets/styles/index.css">
     <title>Yale School of Art - SOA </title>
 </head>
 
@@ -18,10 +18,10 @@
     <header>
         <navbar>
             <ul class="navbar-items">
-                <li class="navbar-item"><a href="/" target="_blank">Home</a></li>
-                <li class="navbar-item"><a href="/" target="_blank">About Us</a></li>
-                <li class="navbar-item"><a href="/" target="_blank">Apply to the School</a></li>
-                <li class="navbar-item"><a href="/" target="_blank">Exhibitions</a></li>
+                <li class="navbar-item"><a href="/html/index.html">Home</a></li>
+                <li class="navbar-item"><a href="/html/about-us.html">About Us</a></li>
+                <li class="navbar-item"><a href="/html/apply-form.html">Apply to the School</a></li>
+                <li class="navbar-item"><a href="/html/exhibitions.html">Exhibitions</a></li>
                 <li class="navbar-item"><a href="/" target="_blank">Publications</a></li>
                 <li class="navbar-item"><a href="/" target="_blank">News</a></li>
                 <li class="navbar-item"><a href="/" target="_blank">Public Events</a></li>
@@ -31,8 +31,8 @@
         <div class="welcome-container">
             <h1>Yale School of Art</h1>
             <p>
-                The Yale School of Art is a graduate school that confers MFAs in Graphic Design, 
-                Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level 
+                The Yale School of Art is a graduate school that confers MFAs in Graphic Design,
+                Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level
                 art courses to Yale College students
             </p>
             <button>
@@ -48,78 +48,88 @@
                 <p>ON THIS PAGE</p>
 
                 <ul class="quickCards">
-                    <li class="quickCard">
-                       <img src="../assets/images/icons/calendar-check-solid.svg" alt="Calendar icon">
+                    <li class="quickCard" id="quick-happening">
+                        <img src="../assets/images/icons/calendar-check-solid.svg" alt="Calendar icon">
                         <P>HAPPENING AT SOA</P>
                     </li>
-                    <li class="quickCard">
-                       <img src="../assets/images/icons/masks-theater-solid.svg" alt="Calendar icon">
+                    <li class="quickCard" id="quick-greenHall">
+                        <img src="../assets/images/icons/masks-theater-solid.svg" alt="Theater icon">
                         <P>GREEN HALL GALLERY</P>
                     </li>
 
-                    <li class="quickCard">
-                        <img src="../assets/images/icons/users-rectangle-solid.svg" alt="Calendar icon">
-                         <P>COMMUNITY BULLETIN BOARD</P>
-                     </li>
+                    <li class="quickCard" id="quick-community">
+                        <img src="../assets/images/icons/users-rectangle-solid.svg" alt="User icon">
+                        <P>COMMUNITY BULLETIN BOARD</P>
+                    </li>
 
-                     <li class="quickCard">
-                        <img src="../assets/images/icons/newspaper-solid.svg" alt="Calendar icon">
-                         <P>SCHOOL NEWS</P>
-                     </li>
+                    <li class="quickCard" id="quick-schoolNews">
+                        <img src="../assets/images/icons/newspaper-solid.svg" alt="Newspaper icon">
+                        <P>SCHOOL NEWS</P>
+                    </li>
 
-                     <li class="quickCard">
-                        <img src="../assets/images/icons/calendar-check-solid.svg" alt="Calendar icon">
-                         <P>CALENDARS & NEWSLETTERS</P>
-                     </li>
+                    <li class="quickCard" id="quick-newsletter">
+                        <img src="../assets/images/icons/envelope-circle-check-solid.svg" alt="Envelope icon">
+                        <P>NEWSLETTERS</P>
+                    </li>
                 </ul>
             </div>
         </section>
 
-        <section class="happening">
+        <section class="happening" id="happening">
             <div class="happening-container">
                 <p>Happening At School of Art</p>
                 <ul class="happening-items">
-                    <li class="happening-item">             
-                        <P>Collections</P>
-                        <P>Modern and Contemporary Art</P>
+                    <li class="happening-item">
+                        <P><a href="https://artgallery.yale.edu/overview-and-highlights" target="_blank">
+                                Collections</a></P>
+                        <P><a href="https://artgallery.yale.edu/collections/objects/60638" target="_blank">Modern and
+                                Contemporary Art</a></P>
                     </li>
 
                     <li class="happening-item">
                         <ul>
                             <li>
-                                <P>Exhibitions</P>
-                                <P>Midcentury Abstraction: A Closer Look</P>
-                            </li>
-                            
-                            <li>
-                                <P>Exhibitions</P>
-                                <P>Gold in America: Artistry, Memory, Power</P>
+                                <P><a href="https://artgallery.yale.edu/current-exhibitions" target="_blank">
+                                        Exhibitions</a></P>
+                                <P><a href="https://artgallery.yale.edu/exhibitions/exhibition/midcentury-abstraction-closer-look"
+                                        target="_blank">Midcentury Abstraction: A Closer Look</a></P>
                             </li>
 
                             <li>
-                                <P>Collections</P>
-                                <P>Asian Art</P>
+                                <P><a href="https://artgallery.yale.edu/current-exhibitions" target="_blank">
+                                        Exhibitions</a></P>
+                                <P><a href="https://artgallery.yale.edu/exhibitions/exhibition/gold-america-artistry-memory-power"
+                                        target="_blank">Gold in America: Artistry, Memory, Power</a></P>
+                            </li>
+
+                            <li>
+                                <P><a href="https://artgallery.yale.edu/overview-and-highlights" target="_blank">
+                                        Collections</a></P>
+                                <P><a href="https://artgallery.yale.edu/collections/objects/25532" target="_blank">Asian
+                                        Art</a></P>
                             </li>
                         </ul>
-                     </li>
-                     
-                     <li class="happening-item">
-                         <P>Collections</P>
-                         <P>Art Of the Ancient Americans</P>
-                     </li>
+                    </li>
+
+                    <li class="happening-item">
+                        <P><a href="https://artgallery.yale.edu/overview-and-highlights" target="_blank">
+                                Collections</a></P>
+                        <P><a href="https://artgallery.yale.edu/collections/objects/214484" target="_blank">Art Of the
+                                Ancient Americans</a></P>
+                    </li>
                 </ul>
             </div>
         </section>
-        
-        <section class="greenHall">
+
+        <section class="greenHall" id="greenhall">
             <div class="greenHall-container">
                 <ul class="greenHall-items">
                     <li class="greenHall-item">
                         <p>Green Hall Gallery</p>
                         <p>
-                            The Yale School of Art is a graduate school that 
-                            confers MFAs in Graphic Design, Painting/Printmaking, 
-                            Photography, and Sculpture; and offers undergraduate-level 
+                            The Yale School of Art is a graduate school that
+                            confers MFAs in Graphic Design, Painting/Printmaking,
+                            Photography, and Sculpture; and offers undergraduate-level
                             art courses to Yale College students
                         </p>
                         <a href="/" target="_blank"><button class="btn-exhibitions">Exhibitions</button></a>
@@ -134,7 +144,7 @@
 
         <div class="community-schoolNews-container">
 
-            <section class="communityBulletin">
+            <section class="communityBulletin" id="communityBulletin">
                 <h2>Communnity Bulletin Board</h2>
                 <div class="posts-container">
                     <ul class="bulletin-posts">
@@ -148,10 +158,10 @@
                                 <li class="bulletin-post-content">
                                     <p>MAPPING PUBLIC ART IN NEW HAVEN</p>
                                     <P>
-                                        Hey everyone! I have been mapping public 
-                                        art in New Haven as part of my nonprofit 
-                                        project ArtAround and I did love to invite 
-                                        you to join me, or just check it out and 
+                                        Hey everyone! I have been mapping public
+                                        art in New Haven as part of my nonprofit
+                                        project ArtAround and I did love to invite
+                                        you to join me, or just check it out and
                                         see what you think.
                                     </P>
                                 </li>
@@ -166,33 +176,33 @@
                                 </li>
                                 <li class="bulletin-post-content">
                                     <p>
-                                        FACULTY/ALUMNI: POST YOUR ART 
-                                        APPRENTICESHIP/INTERNSHIP OPPORTUNITIES 
+                                        FACULTY/ALUMNI: POST YOUR ART
+                                        APPRENTICESHIP/INTERNSHIP OPPORTUNITIES
                                         FOR UNDERGRADUATES
                                     </p>
                                     <P>
-                                        The Yale Arts Apprenticeship Program is an 
-                                        initiative that connects Yale undergraduates, 
-                                        particularly those on financial aid, with professional 
-                                        arts practitioners of any discipline. As an option within 
-                                        Yale is Summer Experience Award (SEA) funding model, the Arts 
-                                        Apprenticeship must fulfill the same basic requirements. Additional 
-                                        details, as well as those specific to the Arts Apprenticeship are 
-                                        included below. Yale faculty, alumni, or other arts practitioners 
-                                        interested in featuring positions through the program should contact 
-                                        Yale is Creative Careers advisor. Which Opportunities are Eligible? 
-                                        Must be at least 30 hours/week, for at least 8-weeks over the summer 
+                                        The Yale Arts Apprenticeship Program is an
+                                        initiative that connects Yale undergraduates,
+                                        particularly those on financial aid, with professional
+                                        arts practitioners of any discipline. As an option within
+                                        Yale is Summer Experience Award (SEA) funding model, the Arts
+                                        Apprenticeship must fulfill the same basic requirements. Additional
+                                        details, as well as those specific to the Arts Apprenticeship are
+                                        included below. Yale faculty, alumni, or other arts practitioners
+                                        interested in featuring positions through the program should contact
+                                        Yale is Creative Careers advisor. Which Opportunities are Eligible?
+                                        Must be at least 30 hours/week, for at least 8-weeks over the summer
                                         months ...
                                     </P>
                                 </li>
                             </ul>
-                            
+
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section class="schoolNews">
+            <section class="schoolNews" id="schoolNews">
                 <h2>School News</h2>
                 <p><strong>News from New Haven</strong> - February 2022</p>
                 <div class="newsContainer">
@@ -209,9 +219,9 @@
                 </div>
             </section>
         </div>
-        
 
-        <section class="receiveTransmissions">
+
+        <section class="receiveTransmissions" id="receiveTransmissions">
             <div class="receive-container">
                 <p>Receive Transmissions</p>
                 <div class="receive-sendbox">
@@ -225,37 +235,42 @@
     <footer>
         <div class="footer-container">
 
-            <ul class="nav">
-                <li class="footer-item"><a href="/" target="_blank">Home</a></li>
-                <li class="footer-item"><a href="/" target="_blank">About Us</a></li>
-                <li class="footer-item"><a href="/" target="_blank">Apply to the School</a></li>
-                <li class="footer-item"><a href="/" target="_blank">Exhibitions</a></li>
+            <ul class="footer-items">
+                <li class="footer-item"><a href="/html/index.html">Home</a></li>
+                <li class="footer-item"><a href="/html/about-us.html">About Us</a></li>
+                <li class="footer-item"><a href="/html/apply-form.html">Apply to the School</a></li>
+                <li class="footer-item"><a href="/html/exhibitions.html">Exhibitions</a></li>
                 <li class="footer-item"><a href="/" target="_blank">Publications</a></li>
                 <li class="footer-item"><a href="/" target="_blank">News</a></li>
                 <li class="footer-item"><a href="/" target="_blank">Public Events</a></li>
             </ul>
             <ul class="social">
                 <li class="social-item"><a href="https://www.instagram.com/yale/" target="_blank">Instagram</a></li>
-                <li class="social-item"><a href="https://www.facebook.com/YaleUniversity" target="_blank">Facebook</a></li>
-                <li class="social-item"><a href="https://www.youtube.com/channel/UCSh-dNnqe1agUSzPM01LgBA" target="_blank">Youtube</a></li>
-                <li class="social-item"><a href="https://your.yale.edu/policies-procedures/policies/1605-web-accessibility-policy" target="_blank">Accessbility at Yale</a></li>
+                <li class="social-item"><a href="https://www.facebook.com/YaleUniversity" target="_blank">Facebook</a>
+                </li>
+                <li class="social-item"><a href="https://www.youtube.com/channel/UCSh-dNnqe1agUSzPM01LgBA"
+                        target="_blank">Youtube</a></li>
+                <li class="social-item"><a
+                        href="https://your.yale.edu/policies-procedures/policies/1605-web-accessibility-policy"
+                        target="_blank">Accessbility at Yale</a></li>
             </ul>
 
             <form action="">
                 <label class="form-item" for="name-input">Name:</label>
-                <input class="form-item"type="text" id="name-input" placeholder="Type your name">
-                
+                <input class="form-item" type="text" id="name-input" placeholder="Type your name">
+
                 <label class="form-item" for="email-input">Email Address:</label>
                 <input class="form-item" type="text" id="email-address" placeholder="mail@email.com">
-                
+
                 <label class="form-item" for="message-input">Mensagem:</label>
-                <textarea class="form-item" name="message-input" id="message-input" cols="30" rows="10" placeholder="Type your text here"></textarea>
+                <textarea class="form-item" name="message-input" id="message-input" cols="30" rows="10"
+                    placeholder="Type your text here"></textarea>
                 <button class="btn-navbar">Send message</button>
             </form>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/2a6dd3ebed.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/index.js"></script>
 </body>
-<script src="https://kit.fontawesome.com/2a6dd3ebed.js" crossorigin="anonymous"></script>
-<script src="../assets/js/index.js"></script>
 
 </html>

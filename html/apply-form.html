@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles/reset.css">
-    <link rel="stylesheet" href="../assets/styles/style-apply-form.css">
+    <link rel="stylesheet" href="../assets/styles/apply-form.css">
 
     <title>Yale School of Art - Apply to the School </title>
 </head>
@@ -27,9 +27,9 @@
         <navbar>
             <ul class="navbar-items">
                 <li class="navbar-item"><a href="/html/index.html">Home</a></li>
-                <li class="navbar-item"><a href="/html/about-us.html" >About Us</a></li>
+                <li class="navbar-item"><a href="/html/about-us.html">About Us</a></li>
                 <li class="navbar-item"><a href="/html/apply-form.html">Apply to the School</a></li>
-                <li class="navbar-item"><a href="/" target="_blank">Exhibitions</a></li>
+                <li class="navbar-item"><a href="/html/exhibitions.html">Exhibitions</a></li>
                 <li class="navbar-item"><a href="/" target="_blank">Publications</a></li>
                 <li class="navbar-item"><a href="/" target="_blank">News</a></li>
                 <li class="navbar-item"><a href="/" target="_blank">Public Events</a></li>
@@ -38,9 +38,9 @@
         </navbar>
     </header>
     <main>
-        <div class="main-block">
+        <div class="main-block" id="main-block">
             <h1>Application form</h1>
-            <form action="/">
+            <form id="form-apply">
                 <hr>
 
                 <label id="icon" for="first-name"><i class="fas fa-user"></i></label>
@@ -51,14 +51,12 @@
 
                 <label id="icon" for="last-name"><i class="fas fa-user"></i></label>
                 <input type="text" name="last-name" id="last-name" placeholder="Last name" required />
-                              
+
                 <fieldset>
-                    <legend class="legend_birthdate" ><strong>Birthdate</strong></legend>                    
+                    <legend class="legend_birthdate"><strong>Birthdate</strong></legend>
                     <div class="form_birthdate">
-                        <select aria-label="Month"
-                            id="form_birthmonth"
-                            name="form_birthmonth" size="1" autocomplete="off"
-                            required="required">
+                        <select aria-label="Month" id="form_birthmonth" name="form_birthmonth" size="1"
+                            autocomplete="off" required="required">
                             <option value=""></option>
                             <option value="01">January</option>
                             <option value="02">February</option>
@@ -73,9 +71,8 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                         </select>
-                        <select aria-label="Day" id="form_birthday"
-                            name="form_birthday" size="1"
-                            autocomplete="off" required="required">
+                        <select aria-label="Day" id="form_birthday" name="form_birthday" size="1" autocomplete="off"
+                            required="required">
                             <option value=""></option>
                             <option value="01">1</option>
                             <option value="02">2</option>
@@ -109,9 +106,8 @@
                             <option value="30">30</option>
                             <option value="31">31</option>
                         </select>
-                        <select aria-label="Year" id="form_birthyear"
-                            name="form_birthyear" size="1" 
-                            autocomplete="off" required="required">
+                        <select aria-label="Year" id="form_birthyear" name="form_birthyear" size="1" autocomplete="off"
+                            required="required">
                             <option></option>
                             <option value="2022">2022</option>
                             <option value="2021">2021</option>
@@ -241,6 +237,7 @@
                 </fieldset>
 
                 <hr>
+
                 <label id="icon" for="form_country"><i class="fas fa-flag"></i></label>
                 <select id="form_country" name="form_c24dedde-2236-424c-af5f-3c2cee646061_country" size="1"
                     autocomplete="off" required="required">
@@ -509,22 +506,21 @@
 
                 <label id="icon" for="form_street"><i class="fas fa-home"></i></label>
                 <input type="text" name="form_street" id="form_street" placeholder="Street" required />
-                <label id="icon" for="form_postalCode"><i class="fas fa-user"></i></label>
+                <label id="icon" for="form_postalCode"><i class="fas fa-table"></i></label>
                 <input type="text" name="form_postalCode" id="form_postalCode" placeholder="Postal code" required />
-                <hr>
 
+                <hr>
 
                 <label id="icon" for="email"><i class="fas fa-envelope"></i></label>
-                <input type="email" name="email" id="email" placeholder="Email address" required /> 
+                <input type="email" name="email" id="email" placeholder="Email address" required />
 
                 <label id="icon" for="phone"><i class="fas fa-phone"></i></label>
-                <input type="email" name="phone" id="phone" placeholder="Phone number" required /> 
-                 
+                <input type="phone" name="phone" id="phone" placeholder="Phone number" required />
+
                 <hr>
 
-
                 <fieldset class="questions">
-                    <legend class="legend_questions"><strong>Which program(s) are you interested in?</strong></legend> 
+                    <legend class="legend_questions"><strong>Which program(s) are you interested in?</strong></legend>
                     <input type="radio" value="none" id="question1-1" name="question1" checked />
                     <label for="question1-1" class="radio">Yale Young Global Scholars (YYGS)</label>
                     <input type="radio" value="none" id="question1-2" name="question1" />
@@ -532,7 +528,7 @@
                 </fieldset>
 
                 <fieldset class="questions">
-                    <legend class="legend_questions"><strong>I am a…</strong></legend> 
+                    <legend class="legend_questions"><strong>I am a…</strong></legend>
                     <input type="radio" value="none" id="question2-1" name="question2" checked />
                     <label for="question2-1" class="radio">College/University Student (ages 19-22+)</label>
 
@@ -540,21 +536,19 @@
                     <label for="question2-2" class="radio">Graduate School Student</label>
 
                     <input type="radio" value="none" id="question2-3" name="question2" />
-                    <label for="question2-3" class="radio">Educator (School Official, Principal, Teacher, Counselor, etc.)</label>
+                    <label for="question2-3" class="radio">Educator (School Official, Principal, Teacher, Counselor,
+                        etc.)</label>
 
                     <input type="radio" value="none" id="question2-4" name="question2" />
                     <label for="question2-4" class="radio">Parent/Guardian</label>
 
                 </fieldset>
-                    
-
-
                 <hr>
                 <div class="btn-block">
                     <p>By clicking Register, you agree on our <a href="https://www.w3docs.com/privacy-policy">Privacy
                             Policy
                             for W3Docs</a>.</p>
-                    <button type="submit" href="/">Submit</button>
+                    <button type="submit" id="btn-submit-apply">Submit</button>
                 </div>
             </form>
         </div>
@@ -566,7 +560,7 @@
                 <li class="footer-item"><a href="/html/index.html">Home</a></li>
                 <li class="footer-item"><a href="/html/about-us.html">About Us</a></li>
                 <li class="footer-item"><a href="/html/apply-form.html">Apply to the School</a></li>
-                <li class="footer-item"><a href="/" target="_blank">Exhibitions</a></li>
+                <li class="footer-item"><a href="/html/exhibitions.html">Exhibitions</a></li>
                 <li class="footer-item"><a href="/" target="_blank">Publications</a></li>
                 <li class="footer-item"><a href="/" target="_blank">News</a></li>
                 <li class="footer-item"><a href="/" target="_blank">Public Events</a></li>
@@ -596,4 +590,7 @@
             </form>
         </div>
     </footer>
+    <script src="../assets/js/apply-form.js"></script>
 </body>
+
+</html>

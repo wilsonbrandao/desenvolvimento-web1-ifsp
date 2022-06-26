@@ -1,4 +1,9 @@
 
+/* 
+-------------------------- Estilos Top bar ---------------------
+autor: WIlson Brandão, Gabriel Murata e Gabriel Meira 
+Obs: Feito via call no Discod
+*/
 navbar {
     background-color: rgba(2,6,37);
     display:flex;
@@ -45,6 +50,12 @@ navbar .navbar-item .btn-navbar{
 }
 
 
+/*
+-------------------------- Estilos formulários ---------------------
+autor: WIlson Brandão, Gabriel Murata e Gabriel Meira 
+Obs: Feito via call no Discod
+*/
+
 body,
 div,
 h1,
@@ -80,6 +91,14 @@ hr {
     background: #ebebeb;
     
 }
+
+.main-block .successfulMessage {
+    margin: 50px;
+    text-align: center;
+    color: #666;
+    font-size: 2rem;
+}
+
 
 form {
     margin: 0 30px;
@@ -147,6 +166,7 @@ input[type=radio]:checked+label:after {
 input[type=text],
 input[type=email],
 input[type=password],
+input[type=phone],
 select {
     width: calc(100% - 57px);
     height: 36px;
@@ -208,14 +228,11 @@ button:hover {
     background: #26a9e0;
 }
 
-
-
-
-
-
-
-
-
+/* 
+-------------------------- Estilos footer ---------------------
+autor: WIlson Brandão, Gabriel Murata e Gabriel Meira 
+Obs: Feito via call no Discod
+*/
 
 footer {
     background-color: rgb(2, 6, 37);

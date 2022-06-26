@@ -20,15 +20,18 @@ header{
     flex-direction: column;
 }
 
+
+
+
+
 /* navbar */
 navbar {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(2,6,37);
     display:flex;
     color: white;
     justify-content:end;
-    position: fixed;
-    top: 0;
     width: 100%;
+    min-height: 90px;
 }
 
 navbar .navbar-items{
@@ -46,6 +49,10 @@ navbar a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+navbar a:hover {
+    color: #26a9e0;
 }
 
 navbar .navbar-item{
@@ -114,7 +121,7 @@ section.quickAccess .quickAccess-container{
 }
 section.quickAccess .quickAccess-container > p {
     color: white;
-    font-weight: 300;
+    font-weight: bold;
     margin-bottom: 10px;
     font-size: .8rem;
     
@@ -126,6 +133,8 @@ section.quickAccess .quickAccess-container > p {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
 
 .quickCard {
     box-sizing: border-box;
@@ -145,17 +154,31 @@ section.quickAccess .quickAccess-container > p {
     box-shadow: 4px 4px 9px 2px rgba(0, 0, 0, 0.95);
 }
 
-/*-------------------------------------- ALINHAR TEXTO DOS CARDS PELO TOPO -------------------*/
+
+
 .quickCard > p {
     display: block;
-    color: #1A1B23;
+    color: #1a1b23;
     font-weight: bold;
+
     font-size: 1.2rem;
     text-align: center;
     ;
 }
 .quickCard img {
     width: 40%;
+}
+
+.quickCard:hover {
+    background-color: #26a9e0;
+    border: black 1px solid;
+    cursor: pointer;
+
+}
+
+.quickCard:hover > p {
+    color: white;
+
 }
 
 
@@ -263,6 +286,8 @@ section.happening .happening-container > ul {
     flex-direction: row;
 }
 
+
+
 .happening-items .happening-item ul li:nth-child(1){
     width: 235px;
     height: 215px;
@@ -314,6 +339,17 @@ section.happening .happening-container > ul {
     justify-content: flex-end;
     color: #1A1B23;
 }
+
+.happening-items .happening-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.happening-items .happening-item a:hover {
+    text-decoration: none;
+    color: #26a9e0;
+}
+
 
 .happening-item p:first-child{
     font-size: 1rem;
@@ -378,6 +414,12 @@ section.greenHall {
     background-color: white;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.btn-exhibitions:hover {
+    background-color: #26a9e0;
+    color: white;
+    cursor: pointer;
 }
 
 .greenHall-items .greenHall-item > img{
@@ -451,53 +493,11 @@ section.greenHall {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .schoolNews {
     margin-left: 10px;
     width: 650px;
     background-color: yellow;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Section Receive Transmissions */
@@ -562,6 +562,8 @@ section.receiveTransmissions {
     width: 50px;
 }
 
+
+
 footer {
     background-color: #020625;
     color: white;
@@ -572,6 +574,10 @@ footer a, footer label {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+footer a:hover {
+    color:#26a9e0;
 }
 
 .footer-container {

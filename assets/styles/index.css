@@ -1,3 +1,9 @@
+/*
+-------------------------- Estilos Root ---------------------
+autor: WIlson Brandão, Gabriel Murata e Gabriel Meira 
+Obs: Feito via call no Discod
+*/
+
 :root {
     --background-color: #2d2d2d;
 }
@@ -6,7 +12,11 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
-/* ---------- header ---------- */
+/*
+-------------------------- Estilos Header ---------------------
+autor: WIlson Brandão, Gabriel Murata e Gabriel Meira 
+Obs: Feito via call no Discod
+*/
 header{
     background-image: 
                         linear-gradient(rgba(5, 5, 5, 0.85), 
@@ -19,10 +29,6 @@ header{
     display: flex;
     flex-direction: column;
 }
-
-
-
-
 
 /* navbar */
 navbar {
@@ -69,6 +75,12 @@ navbar .navbar-item .btn-navbar{
     padding: 5px 10px;
 }
 
+navbar .navbar-item .btn-navbar:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
 
 /* welcome area */
 .welcome-container {
@@ -89,6 +101,11 @@ navbar .navbar-item .btn-navbar{
     margin-top: 10px;
 }
 
+.welcome-container button a {
+    text-decoration: none;
+    color: black;
+}
+
 .welcome-container button {
     font-weight: bold;
     background-color:  #FFFFFF;
@@ -98,8 +115,22 @@ navbar .navbar-item .btn-navbar{
     margin-top: 10px;
 }
 
+.welcome-container button:hover {
+    background-color:  #26a9e0;
+    cursor: pointer;
+    color: white;
+}
 
-/* ---------- Main ---------- */
+.welcome-container button:hover a {
+    color: white;
+}
+
+
+/*
+-------------------------- Estilos Conteúdo principal ---------------------
+autor: WIlson Brandão, Gabriel Murata e Gabriel Meira 
+Obs: Feito via call no Discod
+*/
 main {
     display: flex;
     flex-direction: column;
@@ -134,8 +165,6 @@ section.quickAccess .quickAccess-container > p {
     flex-wrap: wrap;
 }
 
-
-
 .quickCard {
     box-sizing: border-box;
     width: 17%;
@@ -153,8 +182,6 @@ section.quickAccess .quickAccess-container > p {
 
     box-shadow: 4px 4px 9px 2px rgba(0, 0, 0, 0.95);
 }
-
-
 
 .quickCard > p {
     display: block;
@@ -181,9 +208,7 @@ section.quickAccess .quickAccess-container > p {
 
 }
 
-
-
-/*----------- Section Happeing At the School ----------- */
+/* Section Happeing At the School  */
 section.happening {
     box-sizing: border-box;
     color: white;
@@ -366,15 +391,18 @@ section.happening .happening-container > ul {
 }
 
 
-/*------------------Section Green Hall -------------------*/
+/* Section Green Hall */
 section.greenHall {
     background-color: #020625;
     height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items:flex-start;
 }
-
+.greenHall-container {
+    padding-top: 25px;
+}
 .greenHall-container .greenHall-items{
     display: flex;
     flex-direction: row;
@@ -426,6 +454,7 @@ section.greenHall {
     border: 1px solid grey;
     max-width: 50vw;
     max-height: 85vh;
+    
 }
 
 
@@ -446,7 +475,6 @@ section.greenHall {
     font-weight: bold;
     color: white;
 }
-
 
 .posts-container {
     display: flex;
@@ -496,8 +524,89 @@ section.greenHall {
 .schoolNews {
     margin-left: 10px;
     width: 650px;
-    background-color: yellow;
 }
+
+.schoolNews p {
+    font-size: 1.2rem;
+    line-height: 125%;
+    color: white;
+    margin: 15px 0px;
+}
+
+.schoolNews p strong{
+    font-weight: bold;
+}
+
+.newsContainer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.newsContainer ul li {
+    background: white;
+    width: 400px;
+    height: 300px;
+    margin: 0px 10px;
+    box-sizing: border-box;
+}
+
+.newsContainer ul li:first-child {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.85), 
+    rgba(45, 45, 45, 0.4), rgba(45, 45, 45,0.99) 100%),
+     url(../images/section-news/news-virtual-open-studio.png);
+     background-position: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     padding-left: 10px;
+    
+}
+
+.newsContainer ul li:last-child {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.10), 
+    rgba(45, 45, 45, 0.4), rgba(45, 45, 45,0.99) 100%),
+     url(../images/section-news/news-no-white-walls.png);
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     padding-left: 10px;
+}
+
+.newsContainer ul li > p {
+    font-size: 1rem;
+    margin: 0px;
+}
+
+.newsContainer ul li a > p:last-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0px 0px 15px;
+}
+
+.newsContainer ul li a > p:last-child:hover {
+    color: #26a9e0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Section Receive Transmissions */
@@ -562,7 +671,11 @@ section.receiveTransmissions {
     width: 50px;
 }
 
-
+/*
+-------------------------- Estilos Footer ---------------------
+autor: WIlson Brandão, Gabriel Murata e Gabriel Meira 
+Obs: Feito via call no Discod
+*/
 
 footer {
     background-color: #020625;
@@ -570,10 +683,10 @@ footer {
     height: 600px;
 }
 
-footer a, footer label {
+footer a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 footer a:hover {
@@ -589,32 +702,26 @@ footer a:hover {
     
 }
 .footer-container ul > li{
-    margin: 0px 250px 50px 0px;
+    margin: 0px 250px 30px 0px;
 }
 
-.footer-container form {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-}
-
-.footer-container form .form-item {
-    margin: 0px 0px 10px 100px;
-}
-
-
-.footer-container form input.form-item {
-    height: 40px;
-}
-
-.footer-container form button{
-    font-family: 'Inter', sans-serif;
+footer ul li:first-child {
+    font-size: 1.2rem;
     font-weight: bold;
-    color:  black;
-    background-color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    width: 200px;
-    height: 40px;
-    margin: 0px 0px 40px 100px;
+} 
+
+footer hr {
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}   
+
+footer > p {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
 }
+
+
